@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# The site is fully static and contains no sensitive or private paths.
+# PDF documents are external official links, not hosted here.
