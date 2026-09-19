@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="560" viewBox="0 0 420 560" role="img" aria-label="Social Science cover placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EF4444"/>
+      <stop offset="1" stop-color="#991B1B"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="560" fill="url(#g)"/>
+  <circle cx="360" cy="40" r="150" fill="#ffffff" opacity="0.08"/>
+  <circle cx="30" cy="520" r="120" fill="#ffffff" opacity="0.06"/>
+  <text x="60" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="4" fill="#ffffff" opacity="0.9">TNPSC STUDY LIBRARY</text>
+  <text x="210" y="300" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="230" font-weight="700" fill="#ffffff">S</text>
+  <text x="210" y="380" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600" fill="#ffffff">Social Science</text>
+  <line x1="150" y1="410" x2="270" y2="410" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+  <text x="210" y="470" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#ffffff">7 Standard</text>
+  <text x="210" y="515" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">2026–27</text>
+</svg>

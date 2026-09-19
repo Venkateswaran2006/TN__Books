@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Library – TNPSC Study Library</title>
+  <meta name="description" content="Browse and search relevant Tamil Nadu school textbooks for TNPSC and TNUSRB preparation.">
+  <meta name="theme-color" content="#3563e9">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="app-header">
+    <div class="container">
+      <a class="icon-btn" href="index.html" aria-label="Back to home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg>
+      </a>
+      <a class="brand" href="index.html">
+        <span class="brand-text">Library<span class="brand-sub">Choose a standard to begin</span></span>
+      </a>
+      <span class="header-spacer"></span>
+      <button type="button" class="icon-btn js-theme-toggle" aria-label="Toggle dark mode"></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <section class="lib-top">
+        <h1>TNPSC Study Library</h1>
+        <p class="sub" id="subLine">Tamil Medium · 2026–27</p>
+
+        <form id="searchForm" class="search-bar" role="search">
+          <label class="sr-only" for="searchInput">Search books</label>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="searchInput" type="search" placeholder="Search books, subjects, standards…" autocomplete="off" enterkeyhint="search">
+        </form>
+
+        <div class="tool-row">
+          <nav class="chips" id="classChips" aria-label="Standard"></nav>
+          <span class="tool-spacer"></span>
+          <button type="button" class="filter-btn" id="filterBtn" aria-haspopup="dialog">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M7 12h10m-6 6h2"/></svg>
+            Filter <span class="tag" id="filterCount" style="display:none">0</span>
+          </button>
+        </div>
+
+        <nav class="tabs" id="groupTabs" aria-label="Books category"></nav>
+      </section>
+
+      <p class="result-line" id="resultLine"><span></span><span></span></p>
+
+      <div class="book-grid" id="bookGrid" aria-live="polite"></div>
+
+      <section class="empty" id="emptyState" hidden></section>
+
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container">
+      <p>TNPSC Study Library — Tamil Nadu School Textbooks (6th to 12th)</p>
+      <p class="creator">Created by Venkateswaran</p>
+    </div>
+  </footer>
+
+  <div class="offline-banner" role="status" aria-live="polite"></div>
+
+  <!-- Filter sheet (bottom sheet on mobile) -->
+  <div class="sheet-backdrop" id="filterSheet" style="display:none" role="dialog" aria-modal="true" aria-label="Filter books">
+    <div class="bottom-sheet">
+      <div class="sheet-head">
+        <h2>Filter</h2>
+        <button type="button" class="icon-btn" id="filterClose" aria-label="Close filters">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="filter-group gs-standard">
+        <span>Standard</span>
+        <div class="opt-row"></div>
+      </div>
+
+      <div class="filter-group gs-subject">
+        <span>Subject</span>
+        <div class="opt-row"></div>
+      </div>
+
+      <div class="filter-group gs-medium">
+        <span>Medium</span>
+        <div class="opt-row"></div>
+      </div>
+
+      <div class="filter-group gs-year">
+        <span>Academic Year</span>
+        <div class="opt-row"></div>
+      </div>
+
+      <div class="filter-group gs-relevance">
+        <span>Relevance</span>
+        <div class="opt-row"></div>
+      </div>
+
+      <div class="sheet-actions">
+        <button type="button" class="btn btn-ghost btn-block" id="filterReset">Reset</button>
+        <button type="button" class="btn btn-primary btn-block" id="filterApply">Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/books-data.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/library.js"></script>
+</body>
+</html>
